@@ -1,6 +1,4 @@
 my website: https://shakilla1.github.io/alu-student_finance_tracker/
-
-Demo video: https://www.loom.com/share/4d95305584504328be867c88352d3e44?sid=23d8c7df-fd29-4607-b11f-efff67fab3e0
  
  Student Finance Tracker
 It's a web app to help students manage their money. Track spending, set budgets, and understand where your money goes - all in one place!

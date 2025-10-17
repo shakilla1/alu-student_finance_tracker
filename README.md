@@ -76,6 +76,7 @@ Works on: Chrome, Firefox, Microsoft Edge
 
  What's Inside
 text
+
 student-finance-tracker/
 ├── index.html          # Main app
 ├── styles/main.css     # All the styling
@@ -83,7 +84,7 @@ student-finance-tracker/
 ├── tests.html          # Testing page
 └── seed.json           # Sample data
  Need Help?
-Check browser console for any errors
+Check the browser console for any errors
 
 Try importing seed.json for sample data
 

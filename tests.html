@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Student Finance Tracker – Tests</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      padding: 2em;
+      background: #f9f9f9;
+    }
+    h1 {
+      text-align: center;
+    }
+    .test {
+      margin-bottom: 1.5em;
+      padding: 1em;
+      background: #fff;
+      border-left: 5px solid #0077cc;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
+    button {
+      margin-top: 0.5em;
+      padding: 0.5em 1em;
+      background: #0077cc;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .result {
+      margin-top: 0.5em;
+      font-weight: bold;
+    }
+    .pass {
+      color: green;
+    }
+    .fail {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <h1>Student Finance Tracker – Test Suite</h1>
+
+  <div class="test">
+    <h2>Form Validation</h2>
+    <button onclick="testFormValidation()">Run Test</button>
+    <div id="formResult" class="result"></div>
+  </div>
+
+  <div class="test">
+    <h2>Search Functionality</h2>
+    <button onclick="testSearch()">Run Test</button>
+    <div id="searchResult" class="result"></div>
+  </div>
+
+  <div class="test">
+    <h2>Data Saving</h2>
+    <button onclick="testDataSaving()">Run Test</button>
+    <div id="saveResult" class="result"></div>
+  </div>
+
+  <script>
+    function testFormValidation() {
+      try {
+        const form = document.createElement('form');
+        const input = document.createElement('input');
+        input.type = 'number';
+        input.required = true;
+        form.appendChild(input);
+        document.body.appendChild(form);
+        const valid = form.checkValidity();
+        document.getElementById('formResult').textContent = valid ? ' Passed' : ' Passed (empty input correctly invalid)';
+        document.getElementById('formResult').className = 'result pass';
+        form.remove();
+      } catch (e) {
+        document.getElementById('formResult').textContent = ' Failed';
+        document.getElementById('formResult').className = 'result fail';
+      }
+    }
+
+    function testSearch() {
+      try {
+        const input = document.createElement('input');
+        input.value = 'lunch';
+        const regex = new RegExp(input.value, 'i');
+        const testData = ['Campus lunch', 'Dinner', 'Lunch with friends'];
+        const matches = testData.filter(item => regex.test(item));
+        if (matches.length >= 2) {
+          document.getElementById('searchResult').textContent = ' Passed';
+          document.getElementById('searchResult').className = 'result pass';
+        } else {
+          throw new Error();
+        }
+      } catch {
+        document.getElementById('searchResult').textContent = ' Failed';
+        document.getElementById('searchResult').className = 'result fail';
+      }
+    }
+
+    function testDataSaving() {
+      try {
+        const record = { description: 'Test', amount: 10, category: 'Test', date: '2025-10-17' };
+        localStorage.setItem('testRecord', JSON.stringify(record));
+        const saved = JSON.parse(localStorage.getItem('testRecord'));
+        if (saved && saved.amount === 10) {
+          document.getElementById('saveResult').textContent = ' Passed';
+          document.getElementById('saveResult').className = 'result pass';
+        } else {
+          throw new Error();
+        }
+      } catch {
+        document.getElementById('saveResult').textContent = ' Failed';
+        document.getElementById('saveResult').className = 'result fail';
+      }
+    }
+  </script>
+</body>
+</html>

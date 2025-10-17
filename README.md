@@ -1,5 +1,7 @@
+https://shakilla1.github.io/alu-student_finance_tracker/
+ 
  Student Finance Tracker
-it's a web app to help students manage their money. Track spending, set budgets, and understand where your money goes - all in one place!
+It's a web app to help students manage their money. Track spending, set budgets, and understand where your money goes - all in one place!
 
  What It Does
 Track Expenses: Log purchases with categories like Food, Books, Transport
@@ -39,13 +41,6 @@ Enter - Select items
 
 Escape - Cancel or close
 
-Page Shortcuts
-G + D → Dashboard
-
-G + R → Records
-
-G + A → Add Transaction
-
  Everyone Can Use It
 Screen Reader Friendly: Works with VoiceOver, NVDA, JAWS
 
@@ -77,15 +72,11 @@ Easy Start:
 bash
 # Just open the main file in your browser
 open index.html
-Or for Development:
-bash
-python -m http.server 8000
-# Then visit http://localhost:8000
-Works on: Chrome, Firefox, Safari, Edge
+Works on: Chrome, Firefox, Microsoft Edge
 
  What's Inside
 text
-your-finance-app/
+student-finance-tracker/
 ├── index.html          # Main app
 ├── styles/main.css     # All the styling
 ├── scripts/            # App functionality

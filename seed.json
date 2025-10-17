@@ -1,0 +1,47 @@
+[
+  {
+    "id": "txn_1",
+    "description": "University Textbook",
+    "amount": 85.50,
+    "category": "Books",
+    "date": "2023-10-15",
+    "createdAt": "2023-10-15T10:30:00.000Z",
+    "updatedAt": "2023-10-15T10:30:00.000Z"
+  },
+  {
+    "id": "txn_2",
+    "description": "Lunch at Campus Cafe",
+    "amount": 12.75,
+    "category": "Food",
+    "date": "2023-10-16",
+    "createdAt": "2023-10-16T12:15:00.000Z",
+    "updatedAt": "2023-10-16T12:15:00.000Z"
+  },
+  {
+    "id": "txn_3",
+    "description": "Bus Pass Monthly",
+    "amount": 45.00,
+    "category": "Transport",
+    "date": "2023-10-10",
+    "createdAt": "2023-10-10T08:00:00.000Z",
+    "updatedAt": "2023-10-10T08:00:00.000Z"
+  },
+  {
+    "id": "txn_4",
+    "description": "Movie Night",
+    "amount": 25.00,
+    "category": "Entertainment",
+    "date": "2023-10-14",
+    "createdAt": "2023-10-14T20:45:00.000Z",
+    "updatedAt": "2023-10-14T20:45:00.000Z"
+  },
+  {
+    "id": "txn_5",
+    "description": "Lab Fees",
+    "amount": 60.00,
+    "category": "Fees",
+    "date": "2023-10-05",
+    "createdAt": "2023-10-05T14:20:00.000Z",
+    "updatedAt": "2023-10-05T14:20:00.000Z"
+  }
+]

@@ -1,5 +1,4 @@
-my website: https://shakilla1.github.io/alu-student_finance_tracker/
- 
+
  Student Finance Tracker
 It's a web app to help students manage their money. Track spending, set budgets, and understand where your money goes - all in one place!
 
@@ -91,4 +90,9 @@ Try importing seed.json for sample data
 Make sure you're using a modern browser
 
 Email: s.uwamahoro1@alustudent.com
+
+my demo video: https://youtu.be/i6ozgydro_E
+
+my website: https://shakilla1.github.io/alu-student_finance_tracker/
+
 
